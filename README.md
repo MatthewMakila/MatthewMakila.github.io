@@ -8,3 +8,4 @@
 # Notes
 * Add CV
 * Add Gallery of pics (hiking, food, tennis, etc)
+* Add more CSS style boxes around text/sections/imgs with shapes, colors, etc
