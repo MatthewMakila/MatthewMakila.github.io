@@ -7,3 +7,4 @@
 
 # Notes
 * Add CV
+* Add Gallery of pics (hiking, food, tennis, etc)
