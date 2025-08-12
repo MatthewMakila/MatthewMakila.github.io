@@ -174,6 +174,11 @@ input, select, textarea {
 		margin: 0 0 2rem 0;
 	}
 
+	/* Font for all headers */
+	h1, h2, h3, h4, h5, h6 {
+		font-family: 'M PLUS Rounded 1c', Arial, Helvetica, sans-serif;
+	}
+
 	h1, h2, h3, h4, h5, h6 {
 		color: #ffffff;
 		font-weight: 600;
@@ -181,10 +186,16 @@ input, select, textarea {
 		margin: 0 0 1rem 0;
 		text-transform: uppercase;
 		letter-spacing: 0.2rem;
+		font-family: 'M PLUS Rounded 1c', Arial, Helvetica, sans-serif;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
+			text-decoration: none;
+		}
+
+		h4 {
+			color: #d7b45b;
 			text-decoration: none;
 		}
 
@@ -299,6 +310,63 @@ input, select, textarea {
 	.align-right {
 		text-align: right;
 	}
+
+/* Gallery grid styles */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+@media screen and (max-width: 900px) {
+  .gallery-grid {
+	grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .gallery-grid {
+	grid-template-columns: 1fr;
+  }
+}
+
+.gallery-grid figure {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  border-radius: 8px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.gallery-grid figure:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-grid figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(27, 31, 34, 0.7);
+  color: #fff;
+  padding: 0.75em;
+  font-size: 1em;
+  opacity: 0;
+  transition: opacity 0.3s;
+  text-align: center;
+  border-radius: 0 0 8px 8px;
+}
+
+.gallery-grid figure:hover figcaption {
+  opacity: 1;
+}
 
 /* Form */
 
@@ -1140,9 +1208,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
@@ -1155,7 +1226,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg.jpg");
+			background-image: url("../../images/Water_Lilies_1916_-_1919_-_Claude_Monet.jpeg");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1231,6 +1302,27 @@ input, select, textarea {
 			}
 
 		}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 1.5em auto;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
 
 /* Header */
 
