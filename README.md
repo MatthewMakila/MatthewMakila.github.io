@@ -1,11 +1,18 @@
-# Personal Webpage
-* Project to create personal webpage with HTML and CSS framework (Bootstrap)
+# 🚀 Personal Webpage
+My personal webpage
 
-# Updates Log
-* Pushing initial custom format, no template used
-* Includes Homepage, About Me, & Mission
+## 🔨 Updates Log
+- Updated with a template!
 
-# Notes
-* Add CV
-* Add Gallery of pics (hiking, food, tennis, etc)
-* Add more CSS style boxes around text/sections/imgs with shapes, colors, etc
+## ✏️ Notes
+- Add CV
+- Add Gallery of pics (hiking, food, tennis, etc)
+
+## Credits
+### Icons:
+- Font Awesome (fontawesome.io)
+
+### Other:
+- html5up.net | @ajlkn
+- jQuery (jquery.com)
+- Responsive Tools (github.com/ajlkn/responsive-tools)
